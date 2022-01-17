@@ -10,6 +10,7 @@ html{
 
 a{
     text-decoration: none;
+    color: black;
 }
 i{
     margin-left: 10px;
@@ -142,6 +143,145 @@ hr{
     bottom: 8px;
 }
 
+/* Start Hero Section */
+
+.hero{
+    min-height: 100vh;
+}
+
+.hero .hero-items{
+    width: 98%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.hero .hero-header{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.hero .hero-header .card .fa{
+    font-size: 50px;
+}
+.hero .hero-header form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.hero .hero-header .form-control{
+    width: 80%;
+    position: relative;
+}
+.hero .hero-header input{
+    width: 100%;
+    padding: 15px;
+    background-color: rgb(228, 226, 226);
+    border-radius: 20px;
+    border: 0;
+}
+.hero .hero-header button{
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    left: 0%;
+    top: 7px;
+    color: #adadad;
+    font-size: 30px;
+}
+.hero .hero-header img{
+    width: 20%;
+    height: 100px;
+}
+
+.hero .hero-slider{
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: #000;
+    border-radius: 10px;
+}
+
+.hero .hero-slider .slider{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #CCC;
+    padding: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    transition: .5s;
+    transition-delay: 0s;
+    z-index: 1;
+    clip-path: circle(0px at center);
+    border-radius: 10px;
+}
+
+.hero .hero-slider input[type="radio"]:checked + .slider{
+    z-index: 10;
+    clip-path: circle(1000px at center);
+    transition-delay: 0.75s;
+}
+
+.hero .hero-slider input[type="radio"]{
+    position: relative;
+    z-index: 1000;
+    margin: 4px;
+    margin-bottom: 20px;
+    outline: none;
+    cursor: pointer;
+}
+
+.hero .hero-slider img{
+    width: 200px;
+    height: 250px;
+    transform: 0;
+}
+
+.hero .hero-slider .content{
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+
+.hero .hero-slider h1{
+    font-size: 2rem;
+    text-align: center;
+    margin: 10px;
+    color: rgb(40, 40, 185);
+}
+
+.hero .hero-slider a{
+    background-color: rgb(175, 160, 20);
+    width: 40%;
+    font-size: 1.4rem;
+    padding: 10px;
+    border-radius: 10px;
+    color: crimson;
+    font-weight: bold;
+    margin: 15px;
+}
+
+.hero .hero-slider p{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* End Hero Section */
 
 /* Start Footer Section */
 .footer{
@@ -235,6 +375,211 @@ hr{
 
 /* End Footer Section */
 
+/* Start Login Page */
+
+.login .login-items{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 50vh;
+}
+
+.login .login-title{
+    width: 80%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.login .login-title hr{
+    width: 100%;
+    margin-top: 30px;
+    border-color: rgb(252, 250, 250);
+}
+
+.login form{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    align-items: center;
+    position: relative;
+}
+
+.login .form-control{
+    width: 80%;
+    padding: 0 10px 20px;
+    border-radius: 5px;
+    margin: 10px;
+    border: 0;
+    background-color: rgb(233, 233, 233);
+}
+
+.login span{
+    position: absolute;
+    left: 11%;
+    top: 44%;
+    color: #00f;
+    font-weight: bold;
+}
+
+.login button.form-control{
+    padding: 10px 10px 10px;
+    background-color: crimson;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+}
+.login .signup{
+    width: 70%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login .signup :where(p, a){
+    color: rgb(165, 164, 164);
+    margin: 3px;
+}
+
+.login .signup .box{
+    width: 40%;
+    padding: 8px;
+    background-color: white;
+    box-shadow: 0 0 3px 1px #CCC;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+/* End Login Page */
+
+/* Start Categories Page */
+
+.categories{
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.categories .category-items{
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+.categories .col-md-right{
+    width: 50%;
+}
+
+.categories .col-md-right .card-header{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.categories .col-md-right .card-header span{
+    margin-right: 5px;
+    color: #CCC;
+}
+.categories .col-md-right .card-header a{
+    margin-left: 5px;
+    color: #00f;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.categories .card-body{
+    margin-bottom: 10px;
+}
+.categories .card-body h1{
+    border: 1px solid green;
+    padding: 10px;
+    color: green;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.categories .card-body .info{
+    border: 1px solid rgb(161, 160, 160);
+    border-radius: 5px;
+}
+.categories .card-body .info h2{
+    background-color: green;
+    padding: 5px;
+    font-size: 15px;
+    color: rgb(204, 203, 203);
+}
+.categories .card-body .info .list{
+    position: relative;
+}
+.categories .card-body .info .list p{
+    background-color: #CCC;
+    padding: 5px 10px 5px 5px;
+    border-bottom: 1px solid rgb(161, 160, 160);
+}
+
+.categories .card-body .info .list .himber{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border: 1px solid;
+    left: 7px;
+    top: 7px;
+}
+
+.categories .card-body .info .list .himber .bar{
+    position: absolute;
+    width: 10px;
+    height: 1px;
+    left: 2px;
+    top: 6px;
+    background-color: black;
+}
+
+.categories .card-body .price{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 60px;
+    padding: 10px;
+}
+
+.categories .card-body .price-info1{
+    width: 100%;
+    height: 10px;
+    background-color: #CCC;
+    position: relative;
+}
+
+.categories .card-body .price-info1 :where(.span1, .span2){
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    background-color: crimson;
+    top: -2px;
+}
+
+.categories .card-body .price-info1 .span1{
+    right: 0;
+}
+.categories .card-body .price-info1 .span2{
+    left: 0;
+}
+
+.categories .card-body .price-info2{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.categories .col-md-left{
+    width: 45%;
+}
+
+/* End Categories Page */
+
 @media(min-width:768px){
     .hamburger{
         display: none;
@@ -247,7 +592,7 @@ hr{
         flex-direction: row;
         padding: 0;
         align-items: center;
-        margin-bottom: 20%;
+        
     }
     .header .menus{
         display: table;
@@ -277,6 +622,38 @@ hr{
     }
 
     /* End Header Section */
+
+    /* Start Hero Section */
+    .hero{
+        min-height: 90vh;
+    }
+
+    .hero .hero-items{
+        height: 90vh;
+    }
+    .hero .hero-header img{
+        width: 10%;
+        height: 100px;
+    }
+    .hero .hero-slider{
+        height: 70%;
+    }
+    .hero .hero-slider .slider{
+        flex-direction: row-reverse;
+    }
+    .hero .hero-slider img{
+        transform: skewY(20deg) rotateZ(-30deg);
+    }
+    .hero .hero-slider .content{
+        width: 50%;
+    }
+    .hero .hero-slider h1{
+        font-size: 3rem;
+    }
+    .hero .hero-slider a{
+        width: 30%;
+    }
+    /* End Hero Section */
 
     /* Start Footer Section */
 
@@ -321,4 +698,36 @@ hr{
     }
 
     /* End CopyRight Section */
+
+    /* Start Login Page */
+    .login .login-title hr{
+        width: 50%;
+        text-align: center;
+    }
+    .login form{
+        width: 40%;
+    }
+    .login .signup .box{
+        width: 15%;
+    }
+    /* End Login Page */
+
+    /*! Start Categories Page */
+
+    .categories .col-md-right{
+        width: 20%;
+    }
+    .categories .col-md-left{
+        width: 75%;
+    }
+
+    .categories .col-md-right .card-header span{
+        margin-right: 10px; 
+    }
+    .categories .col-md-right .card-header a{
+        margin-left: 10px;
+        font-size: 16px;
+    }
+
+    /*! End Categories Page */
 }
