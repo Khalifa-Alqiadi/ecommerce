@@ -6,6 +6,7 @@
 
 html{
     direction:rtl;
+    overflow-x: hidden;
 }
 
 a{
@@ -70,6 +71,13 @@ hr{
     margin-bottom: 20px;
     border-bottom: 1px solid rgb(87, 85, 85);
     width: 70%;
+}
+
+.header .menus li .btn{
+    border: 0;
+    width: 100%;
+    font-size: 17px;
+    background-color: transparent;
 }
 
 .header .menus img{
@@ -283,6 +291,215 @@ hr{
 
 /* End Hero Section */
 
+/* Start Categories Section */
+
+.categories{
+    flex-direction: column;
+    padding: 25px;
+    justify-content: space-between;
+}
+
+.categories h1{
+    text-align: right;
+    width: 100%;
+    margin-bottom: 10px;
+    color: #532929;
+}
+
+.categories .all-categories{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.categories .item{
+    width: 150px;
+    height: 150px;
+    box-shadow: 0 0 4px 2px #CCC;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.categories .item .icons{
+    width: 70px;
+    height: 70px;
+    background-color: #532929;
+    color: white;
+    border-radius: 50%;
+}
+
+.categories .item:nth-child(2) .icons{
+    background-color: #f79f1c;
+}
+.categories .item:nth-child(2) p{
+    color: #f79f1c;
+}
+.categories .item:nth-child(3) .icons{
+    background-color: #795bc0;
+}
+.categories .item:nth-child(3) p{
+    color: #795bc0;
+}
+.categories .item:nth-child(4) .icons{
+    background-color: #2c9fd4;
+}
+.categories .item:nth-child(4) p{
+    color: #ac5076;
+}
+.categories .item:nth-child(5) .icons{
+    background-color: #3885b1;
+}
+.categories .item:nth-child(5) p{
+    color: #3885b1;
+}
+.categories .item:nth-child(6) .icons{
+    background-color: #25a750;
+}
+.categories .item:nth-child(6) p{
+    color: #25a750;
+}
+.categories .item:nth-child(7) .icons{
+    background-color: #7a0e4a;
+}
+.categories .item:nth-child(7) p{
+    color: #7a0e4a;
+}
+
+.categories .item .icons .fa{
+    margin: 23% 16%;
+    font-size: 40px;
+}
+
+.categories .item p{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* End Categories Section */
+
+/* Start Ads Section */
+
+.ads{
+    
+}
+
+.ads .all-ads{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 95%;
+    height: 100vh;
+}
+
+.ads .ads-header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 70%;
+}
+
+.ads .ads-header img{
+    flex-basis: 45%;
+    height: 140px;
+}
+
+.ads .ads-footer{
+    width: 98%;
+}
+
+.ads .ads-footer img{
+    width: 100%;
+    height: 200px;
+}
+
+/* End Ads Section */
+
+/* Start Conutdown Section */
+.conutdown{
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.conutdown h1{
+    width: 100%;
+}
+
+.conutdown .all-items{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 98%;
+}
+
+.conutdown .item{
+    flex-basis: 40%;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 4px 2px #CCC;
+}
+
+.conutdown .item img{
+    width: 80%;
+    height: 200px;
+    padding: 0;
+    margin-bottom: 5px;
+}
+
+.conutdown .item h2 .fa{
+    color: crimson;
+}
+
+.conutdown .item p{
+    color: #CCC;
+    margin: 5px;
+}
+
+.conutdown .item .price{
+    margin: 10px;
+    color: crimson;
+}
+
+.conutdown .item .price h1 span{
+    font-size: 15px;
+}
+
+.conutdown .item .price p{
+    color: #CCC;
+}
+
+.conutdown .item .icons{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.conutdown .item .icons .center{
+    height: 40px;
+    width: 40px;
+    background-color: crimson;
+    text-align: center;
+    border-radius: 50%;
+}
+.conutdown .item .icons .center .fa{
+    margin: 10px;
+    color: white;
+}
+/* End Conutdown Section */
+
 /* Start Footer Section */
 .footer{
     background-color: rgb(36, 35, 35);
@@ -377,6 +594,25 @@ hr{
 
 /* Start Login Page */
 
+.login{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 500;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.login.open{
+    opacity: 1;
+    visibility: visible;
+}
+
+
 .login .login-items{
     width: 100%;
     display: flex;
@@ -384,16 +620,21 @@ hr{
     justify-content: space-evenly;
     align-items: center;
     height: 50vh;
+    background-color: white;
+    height: 90vh;
+    width: 80%;
+    border-radius: 10px;
+    position: relative;
 }
 
-.login .login-title{
+ .login-title{
     width: 80%;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.login .login-title hr{
+.login-title hr{
     width: 100%;
     margin-top: 30px;
     border-color: rgb(252, 250, 250);
@@ -431,7 +672,7 @@ hr{
     font-size: 17px;
     font-weight: bold;
 }
-.login .signup{
+.login .ssignup{
     width: 70%;
     text-align: center;
     display: flex;
@@ -439,12 +680,12 @@ hr{
     align-items: center;
 }
 
-.login .signup :where(p, a){
+.login .ssignup :where(p, a){
     color: rgb(165, 164, 164);
     margin: 3px;
 }
 
-.login .signup .box{
+.login .ssignup .box{
     width: 40%;
     padding: 8px;
     background-color: white;
@@ -452,46 +693,160 @@ hr{
     border-radius: 3px;
     font-weight: bold;
 }
+.signup{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 500;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+
+.signup.open{
+    opacity: 1;
+    visibility: visible;
+}
+
+.signup .signup-items{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 50vh;
+    background-color: white;
+    height: 90vh;
+    width: 80%;
+    border-radius: 10px;
+    position: relative;
+}
+
+ .signup .login-title{
+    width: 80%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.signup .login-title hr{
+    width: 100%;
+    margin-top: 30px;
+    border-color: rgb(252, 250, 250);
+}
+
+.signup form{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    align-items: center;
+    position: relative;
+}
+
+.signup .form-control{
+    width: 80%;
+    padding: 0 10px 20px;
+    border-radius: 5px;
+    margin: 10px;
+    border: 0;
+    background-color: rgb(233, 233, 233);
+}
+
+.signup span{
+    position: absolute;
+    left: 11%;
+    top: 44%;
+    color: #00f;
+    font-weight: bold;
+}
+
+.signup .select{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+} 
+.signup .select select.form-control{
+    width: 50%;
+} 
+
+.signup button.form-control{
+    padding: 10px 10px 10px;
+    background-color: crimson;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.popup-close-icon{
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    color: red;
+    font-size: 41px;
+    line-height: 30px;
+    left: 0%;
+    top: 0%;
+    cursor: pointer;
+    font-weight: bold;
+}
+.popup-close-icons{
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    color: red;
+    font-size: 41px;
+    line-height: 30px;
+    left: 0%;
+    top: 0%;
+    cursor: pointer;
+    font-weight: bold;
+}
 
 /* End Login Page */
 
 /* Start Categories Page */
 
-.categories{
+.category{
     justify-content: flex-start;
     align-items: flex-start;
 }
 
-.categories .category-items{
+.category .category-items{
     display: flex;
     flex-direction: row;
     padding: 20px;
     justify-content: space-between;
 }
 
-.categories .col-md-right{
+.category .col-md-right{
     width: 50%;
 }
 
-.categories .col-md-right .card-header{
+.category .col-md-right .card-header{
     width: 100%;
     margin-bottom: 10px;
 }
-.categories .col-md-right .card-header span{
+.category .col-md-right .card-header span{
     margin-right: 5px;
     color: #CCC;
 }
-.categories .col-md-right .card-header a{
+.category .col-md-right .card-header a{
     margin-left: 5px;
     color: #00f;
     font-weight: bold;
     font-size: 14px;
 }
 
-.categories .card-body{
+.category .card-body{
     margin-bottom: 10px;
 }
-.categories .card-body h1{
+.category .card-body h1{
     border: 1px solid green;
     padding: 10px;
     color: green;
@@ -499,26 +854,26 @@ hr{
     border-radius: 5px;
 }
 
-.categories .card-body .info{
+.category .card-body .info{
     border: 1px solid rgb(161, 160, 160);
     border-radius: 5px;
 }
-.categories .card-body .info h2{
+.category .card-body .info h2{
     background-color: green;
     padding: 5px;
     font-size: 15px;
     color: rgb(204, 203, 203);
 }
-.categories .card-body .info .list{
+.category .card-body .info .list{
     position: relative;
 }
-.categories .card-body .info .list p{
+.category .card-body .info .list p{
     background-color: #CCC;
     padding: 5px 10px 5px 5px;
     border-bottom: 1px solid rgb(161, 160, 160);
 }
 
-.categories .card-body .info .list .himber{
+.category .card-body .info .list .himber{
     position: absolute;
     width: 15px;
     height: 15px;
@@ -527,7 +882,7 @@ hr{
     top: 7px;
 }
 
-.categories .card-body .info .list .himber .bar{
+.category .card-body .info .list .himber .bar{
     position: absolute;
     width: 10px;
     height: 1px;
@@ -536,7 +891,7 @@ hr{
     background-color: black;
 }
 
-.categories .card-body .price{
+.category .card-body .price{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -545,14 +900,14 @@ hr{
     padding: 10px;
 }
 
-.categories .card-body .price-info1{
+.category .card-body .price-info1{
     width: 100%;
     height: 10px;
     background-color: #CCC;
     position: relative;
 }
 
-.categories .card-body .price-info1 :where(.span1, .span2){
+.category .card-body .price-info1 :where(.span1, .span2){
     position: absolute;
     width: 14px;
     height: 14px;
@@ -560,25 +915,302 @@ hr{
     top: -2px;
 }
 
-.categories .card-body .price-info1 .span1{
+.category .card-body .price-info1 .span1{
     right: 0;
 }
-.categories .card-body .price-info1 .span2{
+.category .card-body .price-info1 .span2{
     left: 0;
 }
 
-.categories .card-body .price-info2{
+.category .card-body .price-info2{
     margin-top: 10px;
     display: flex;
     justify-content: space-between;
     width: 100%;
 }
 
-.categories .col-md-left{
+.category .col-md-left{
     width: 45%;
 }
 
 /* End Categories Page */
+/* ! Start Book Page */
+
+.book .all-items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.book .book-header{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+} 
+
+.book-header .card-header{
+    margin: 10px;
+}
+.book-header .card-header span{
+    margin-right: 10px;
+    color: #CCC;
+}
+.book-header .card-header a{
+    margin-left: 10px;
+    color: #00f;
+}
+
+.book .card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+}
+
+.book .card-body .right{
+    width: 90%;
+    border: 1px solid #CCC;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.book .card-body .right img{
+    width: 70%;
+    height: 250px;
+    border-radius: 20px;
+}
+
+.book .card-body .right .buttom{
+    height: 50px;
+    width: 50px;
+    border: 1px solid #CCC;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.book .card-body .right .buttom img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.book .card-body .center{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    border: 1px solid #CCC;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.book .card-body .center-header{
+    margin-bottom: 10px;
+}
+
+.book .card-body .center-header .view{
+    color: #3885b1;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.book .card-body .center-header p{
+    color: #CCC;
+}
+
+.book .card-body .center-header h2{
+    color: crimson;
+}
+
+.book .card-body .center-header h2 span{
+    font-size: 15px;
+}
+
+.book .card-body .content{
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.book .card-body .content p{
+    color: #CCC;
+}
+
+.book .card-body .content .icons{
+    display: flex;
+    flex-direction: row-reverse;
+    font-weight: bold;
+}
+
+.book .card-body .content .icons span{
+    color: #3885b1;
+}
+
+.book .card-body .content .icons .fa{
+    color: #f79f1c;
+    margin-bottom: 4px;
+}
+
+.book .card-body .center-footer{
+    display: flex;
+    flex-direction: column;
+}
+
+.book .card-body .center-footer h2{
+    font-size: 17px;
+    color: #9e9e9e;
+    margin-bottom: 5px;
+}
+.book .card-body .center-footer .redio1,
+.book .card-body .center-footer .redio2{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    color: #818181;
+}
+.book .card-body .center-footer .r-right{
+    display: flex;
+    align-items: center;
+}
+
+.book .card-body .center-footer .redio1 .r-right div{
+    height: 23px;
+    width: 23px;
+    background-color: blue;
+    margin-left: 10px;
+    border-radius: 50%;
+    position: relative;
+}
+.book .card-body .center-footer .redio2 .r-right div{
+    height: 23px;
+    width: 23px;
+    background-color: transparent;
+    margin-left: 10px;
+    border-radius: 50%;
+    position: relative;
+    border: 1px solid #CCC;
+}
+
+.book .card-body .center-footer .r-right .span{
+    height: 10px;
+    width: 10px;
+    background-color: #f6f1f1;
+    border-radius: 50%;
+    position: absolute;
+    margin: 7px;
+}
+.book .card-body .center-footer .redio1 .r-right p span{
+    padding: 5px;
+    background-color: #CCC;
+    border-radius: 40%;
+}
+
+.book .card-body .center-footer h1{
+    color: crimson;
+}
+
+.book .card-body .center-footer h1 span{
+    font-size: 15px;
+}
+
+.book .card-body .left{
+    border: 1px solid #CCC;
+    padding: 10px;
+    width: 90%;
+}
+
+.book .card-body .left-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+}
+.book .card-body .left-header .note{
+    background-color: #f0c2af28;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.book .card-body .left-header .note span{
+    font-size: 19px;
+}
+.book .card-body .left-header .note a{
+    color: #3885b1;
+}
+
+.book .card-body .left-header .card{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.book .card-body .left-header .card select{
+    width: 15%;
+    border-radius: 10px;
+}
+.book .card-body .left-header .card h1{
+    width: 80%;
+    text-align: center;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: crimson;
+    color: white;
+}
+
+.book .card-body .left-header .option{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.book .card-body .left-header .option .box{
+    display: flex;
+    flex-basis: 40%;
+    margin: 10px;
+    color: #807e7e;
+}
+
+.book .card-body .left-header .option .box p{
+    margin: 5px;
+}
+.book .card-body .left-header .bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+}
+
+.book .card-body .left-header .bottom p,
+.book .card-body .left-footer p{
+    width: 30%;
+    padding: 7px;
+    box-shadow: 0 0 5px 1px #CCC;
+    border-radius: 5px;
+}
+.book .card-body .left-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    border-top: 1px solid #CCC;
+    margin: 10px auto;
+}
+
+
+
+
+/* ! End Book Page */
 
 @media(min-width:768px){
     .hamburger{
@@ -655,6 +1287,83 @@ hr{
     }
     /* End Hero Section */
 
+    /* Start Categories Section */
+
+    .categories{
+        min-height: 20vh;
+        
+    }
+
+    /* End Categories Section */
+
+    /* Start Ads Section */
+
+    .ads{
+        min-height: 70vh;
+    }
+    .ads .all-ads{
+        height: 70vh;
+    }
+    .ads .ads-header img{
+        flex-basis: 23%;
+    }
+
+    /* End Ads Section */
+
+    /* Start Conutdown Section */
+    .conutdown{
+        min-height: 75vh;
+    }
+    .conutdown .all-items{
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+    }
+    .conutdown .item{
+        flex-basis: auto;
+        width: 16%;
+    }
+
+    .conutdown .item img{
+        width: 150px;
+    }
+    /* End Conutdown Section */
+    /* Start Book Section */
+
+    .book .card-header{
+        width: 90%;
+        text-align: right;
+    }
+    .book .card-body{
+        flex-direction: row;
+        width: 80%;
+        height: 90vh;
+    }
+
+    .book .card-body :where(.right, .center, .left){
+        margin: 20px;
+        max-width: 30%;
+        max-height: 75%;
+    }
+
+    .book .card-body .right{
+        justify-content: flex-start;
+    }
+
+    .book .card-body .right img{
+        height: 300px;
+        margin-bottom: 10%;
+    }
+    .book .card-body .left-header .option .box{
+        margin: 5px;
+    }
+
+    .book .card-body .left-footer{
+        margin: auto;
+    }
+
+    /* End Book Section */
+
     /* Start Footer Section */
 
     .footer{
@@ -700,31 +1409,54 @@ hr{
     /* End CopyRight Section */
 
     /* Start Login Page */
+    .login .login-items{
+        width: 60%;
+        height: 70vh;
+    }
     .login .login-title hr{
         width: 50%;
         text-align: center;
     }
     .login form{
+        width: 70%;
+    }
+    .login .ssignup .box{
+        width: 25%;
+    }
+
+    .signup .signup-items{
+        width: 80%;
+        height: 100vh;
+    }
+
+    .signup .form-control{
+        width: 100%;
+    }
+    .signup .login-title hr{
+        width: 50%;
+        text-align: center;
+    }
+    .signup form{
         width: 40%;
     }
-    .login .signup .box{
-        width: 15%;
+    .signup .ssignup .box{
+        width: 25%;
     }
     /* End Login Page */
 
     /*! Start Categories Page */
 
-    .categories .col-md-right{
+    .category .col-md-right{
         width: 20%;
     }
-    .categories .col-md-left{
+    .category .col-md-left{
         width: 75%;
     }
 
-    .categories .col-md-right .card-header span{
+    .category .col-md-right .card-header span{
         margin-right: 10px; 
     }
-    .categories .col-md-right .card-header a{
+    .category .col-md-right .card-header a{
         margin-left: 10px;
         font-size: 16px;
     }
