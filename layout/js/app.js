@@ -72,8 +72,10 @@ popups.addEventListener("click", function(e){
     if(e.target == popups){
         popupsBox();
     }
-})
+});
 
 function popupsBox(){
     popups.classList.toggle("open");
-}
+};
+
+

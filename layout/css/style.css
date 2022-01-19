@@ -1212,6 +1212,234 @@ hr{
 
 /* ! End Book Page */
 
+/*! Start Card Page */
+
+.cards{
+    
+}
+.cards .cards-items{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 97%;
+    padding: 20px;
+}
+
+.cards .card-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 30%;
+    text-align: right;
+    
+}
+
+.cards .col-md-left{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 0 2px 1px #CCC;
+    padding: 20px;
+    height: 50vh;
+}
+
+.cards .col-md-left .left-top{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 10px;
+}
+
+.cards .col-md-left .left-top h2,
+.cards .col-md-left .left-top h3{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.cards .col-md-left .left-top h1{
+    color: crimson;
+    display: flex;
+    align-items: flex-end;
+}
+.cards .col-md-left .left-top h1 p{
+    color: #CCC;
+    margin-right: 10px;
+    font-size: 15px;
+}
+.cards .col-md-left .left-top h1 span{
+    font-size: 15px;
+}
+.cards .col-md-left .top-left h2{
+    color: green;
+}
+
+.cards .col-md-left .left-buttom{
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.cards .col-md-left .left-buttom p{
+    font-size: 17px;
+    width: 100%;
+}
+
+.cards .col-md-left .left-buttom span{
+    color: #3885b1;
+}
+.cards .col-md-left .left-buttom a{
+    text-align: center;
+    background-color: crimson;
+    padding: 5px;
+    box-shadow: 0 0 0px 3px crimson;
+    border-radius: 3px;
+    margin-top: 10px;
+    color: white;
+    font-weight: bold;
+}
+
+/*! End Card Page */
+/*! Start Stepper Page */
+
+.width-50{
+    width: 50%;
+}
+
+.ml-auto{
+    margin-left: auto;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.progressbar{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin: 3rem 0;
+    counter-reset: step;
+}
+
+.progressbar::before, .progress{
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 4px;
+    width: 100%;
+    background-color: #dcdcdc;
+    z-index: -1;
+}
+
+.progress{
+    background-color: #00f;
+    color: #FFF;
+    width: 0%;
+}
+
+.progress-step{
+    width: 2.1875rem;
+    height: 2.1875rem;
+    background-color: #dcdcdc;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.progress-step::after{
+    content: attr(data-title);
+    position: absolute;
+    top: calc(100% + 0.5rem);
+    font-size: 0.85rem;
+    color: #666;
+
+}
+
+.progress-step::before{
+    counter-increment: step;
+    content: counter(step);
+}
+
+.progress-step-active{
+    background-color: #00f;
+    color: #FFF;
+}
+
+.form-step{
+    display: none;
+    transform-origin: top;
+    animation: step .5s;
+}
+
+@keyframes step{
+    0%{
+        transform: scale(1, 0);
+        opacity: 0;
+    }100%{
+        transform: scale(1, 1);
+        opacity: 1;
+    }
+}
+
+.form-step-active{
+    display: block;
+}
+
+.stepper .form{
+    width: clamp(320px, 30%, 430px);
+    margin: 0 auto;
+    border: 1px solid #CCC;
+    border-radius: 0.35rem;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.form input{
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #CCC;
+    border-radius: 0.25rem;
+}
+
+.form label{
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form .input-group{
+    margin: 2rem 0;
+}
+
+.btns-group{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.form .btn{
+    padding: 0.75rem;
+    display: block;
+    background-color: #00f;
+    color: #FFF;
+    text-align: center;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+
+.form .btn:hover{
+    box-shadow: 0 0 0 2px #FFF, 0 0 0 3px #00f;
+    
+}
+
+/*! End Stepper Page */
+
 @media(min-width:768px){
     .hamburger{
         display: none;
@@ -1462,4 +1690,32 @@ hr{
     }
 
     /*! End Categories Page */
+
+    /*! Stert Card Page */
+    .cards{
+        flex-direction: column;
+    }
+    .cards .card-header{
+        width: 88%;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    .cards .card-header h1{
+        margin-left: 10px;
+    }
+    .cards .cards-items{
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    .cards .cards-items .col-md-right{
+        width: 50%;
+    }
+
+    .cards .cards-items .col-md-left{
+        width: 30%;
+    }
+
+    /*! End Card Page */
 }
