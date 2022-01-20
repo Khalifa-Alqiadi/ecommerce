@@ -172,6 +172,22 @@ hr{
     align-items: center;
 }
 
+.hero .hero-header .card{
+    position: relative;
+}
+.hero .hero-header .card .num{
+    position: absolute;
+    background-color: red;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+}
+
 .hero .hero-header .card .fa{
     font-size: 50px;
 }

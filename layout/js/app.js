@@ -9,7 +9,7 @@ hamburger.addEventListener('click',()=>{
 });
 
 let timerC = document.querySelector(".conutdown");
-let countDown = new Date("Jan 18, 2022 19:30:59").getTime();
+let countDown = new Date("Jan 20, 2022 22:30:59").getTime();
 
 let counter = setInterval(() => {
     let dateNow = new Date().getTime();
@@ -78,4 +78,14 @@ function popupsBox(){
     popups.classList.toggle("open");
 };
 
+let i = 0;
+const cardNum = document.getElementById("fa-cart");
+const num = document.getElementById("num");
 
+cardNum.addEventListener("click", () =>{
+    
+    i+=1;
+    sessionStorage.setItem('name', i);
+    let cart = sessionStorage.getItem('name')
+    num.innerHTML = cart;
+})
