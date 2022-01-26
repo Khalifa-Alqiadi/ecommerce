@@ -1,4 +1,5 @@
 const hamburger = document.querySelector('#header .hamburger');
+
 const mobile_menu = document.querySelector('#header .header');
 // const menu_item = document.querySelectorAll('.header .nav-bar .nav-list ul li a');
 const header = document.querySelector('header.container');
@@ -9,7 +10,7 @@ hamburger.addEventListener('click',()=>{
 });
 
 let timerC = document.querySelector(".conutdown");
-let countDown = new Date("Jan 20, 2022 22:30:59").getTime();
+let countDown = new Date("Jan 21, 2022 24:30:59").getTime();
 
 let counter = setInterval(() => {
     let dateNow = new Date().getTime();
@@ -29,63 +30,87 @@ let counter = setInterval(() => {
 }, 1000);
 
 
-const serviceItems = document.querySelector(".model-log");
-const popup = document.querySelector(".login");
-const popupCloseBtn = popup.querySelector(".popup-close-btn");
-const popupCloseIcon = popup.querySelector(".popup-close-icon");
-serviceItems.addEventListener("click", function(event){
-    if(event.target.tagName.toLowerCase() == "button"){
+const loginModel = document.querySelector(".model-log");
+const login = document.querySelector(".login");
+const loginCloseBtn = login.querySelector(".popup-close-btn");
+const loginCloseIcon = login.querySelector(".popup-close-icon");
+
+loginModel.addEventListener("click", function(event){
+    if(event.target.tagName.toLowerCase() == "a"){
         event.target.parentElement;
-        popupBox();
+        loginBox();
     }
 });
 
-popupCloseBtn.addEventListener("click", popupBox);
-popupCloseIcon.addEventListener("click", popupBox);
+loginCloseBtn.addEventListener("click", loginBox);
+loginCloseIcon.addEventListener("click", loginBox);
 
-popup.addEventListener("click", function(event){
-    if(event.target == popup){
-        popupBox();
+login.addEventListener("click", function(event){
+    if(event.target == login){
+        loginBox();
     }
 })
 
-function popupBox(){
-    popup.classList.toggle("open");
+function loginBox(){
+    login.classList.toggle("open");
 }
 
 
-const signup = document.querySelector(".model-signup");
-const popups = document.querySelector(".signup");
-const popupsCloseBtn = popups.querySelector(".popup-close-btns");
-const popupsCloseIcon = popups.querySelector(".popup-close-icons");
-signup.addEventListener("click", function(e){
-    if(e.target.tagName.toLowerCase() == "button"){
+const signupModel = document.querySelector(".model-signup");
+const signup = document.querySelector(".signup");
+const signupCloseBtn = signup.querySelector(".popup-close-btn");
+const signupCloseIcon = signup.querySelector(".popup-close-icon");
+signupModel.addEventListener("click", function(e){
+    if(e.target.tagName.toLowerCase() == "a"){
         e.target.parentElement;
-        popupsBox();
+        signupBox();
+        showBox();
+    }
+});
+signupCloseBtn.addEventListener("click", signupBox);
+signupCloseIcon.addEventListener("click", signupBox);
+
+signup.addEventListener("click", function(e){
+    if(e.target == signup){
+        signupBox();
     }
 });
 
-popupsCloseBtn.addEventListener("click", popupsBox);
-popupsCloseIcon.addEventListener("click", popupsBox);
-
-popups.addEventListener("click", function(e){
-    if(e.target == popups){
-        popupsBox();
-    }
-});
-
-function popupsBox(){
-    popups.classList.toggle("open");
+function signupBox(){
+    signup.classList.toggle("open");
 };
 
-let i = 0;
-const cardNum = document.getElementById("fa-cart");
-const num = document.getElementById("num");
+function showBox(){
+    login.classList.remove("open");
+}
 
-cardNum.addEventListener("click", () =>{
+let cart = localStorage.getItem('name');
+let i = cart;
+
+const cardNum = document.querySelectorAll(".icons .fa-cart-arrow-down");
+const num = document.querySelector(".num");
+cardNum.forEach((btn) =>{
     
-    i+=1;
-    sessionStorage.setItem('name', i);
-    let cart = sessionStorage.getItem('name')
+    btn.addEventListener("click", () =>{
+        
+        i++;
+        localStorage.setItem('name', i);
+        num.innerHTML = i;
+        
+    });
     num.innerHTML = cart;
+});
+
+const search = document.getElementById("search");
+search.addEventListener("click", () => {
+    let searchInput = document.getElementById("search-input").value;
+    let elements = document.querySelectorAll(".product-name");
+    let items = document.querySelectorAll(".filter");
+    elements.forEach((element, index) =>{
+        if(element.innerText.includes(searchInput.toUpperCase())){
+            items[index].classList.remove("hide");
+        }else{
+            items[index].classList.add("hide");
+        }
+    })
 })
