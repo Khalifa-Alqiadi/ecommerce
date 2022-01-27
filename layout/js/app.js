@@ -10,7 +10,7 @@ hamburger.addEventListener('click',()=>{
 });
 
 let timerC = document.querySelector(".conutdown");
-let countDown = new Date("Jan 21, 2022 24:30:59").getTime();
+let countDown = new Date("Jan 27, 2022 24:30:59").getTime();
 
 let counter = setInterval(() => {
     let dateNow = new Date().getTime();
@@ -101,7 +101,7 @@ cardNum.forEach((btn) =>{
     num.innerHTML = cart;
 });
 
-const search = document.getElementById("search");
+/*const search = document.getElementById("search");
 search.addEventListener("click", () => {
     let searchInput = document.getElementById("search-input").value;
     let elements = document.querySelectorAll(".product-name");
@@ -113,4 +113,4 @@ search.addEventListener("click", () => {
             items[index].classList.add("hide");
         }
     })
-})
+})*/

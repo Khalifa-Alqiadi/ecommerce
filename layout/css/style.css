@@ -176,12 +176,12 @@ hr {
 /* Start Hero Section */
 
 .hero {
-    min-height: 100vh;
+    min-height: 36vh;
 }
 
 .hero .hero-items {
     width: 90%;
-    height: 70vh;
+    height: 36vh;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -252,7 +252,7 @@ hr {
 .hero .hero-slider {
     position: relative;
     width: 100%;
-    height: 40vh;
+    height: 45%;
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -265,7 +265,7 @@ hr {
     top: 0;
     left: 0;
     width: 100%;
-    height: 40vh;
+    height: 100%;
     background-image: linear-gradient(#ccc, #aaa9a9, #d1d1d1);
     display: flex;
     align-items: center;
@@ -294,8 +294,42 @@ hr {
 
 .hero .hero-slider img {
     width: 100%;
-    height: 40vh;
+    height: auto;
 }
+
+/* .hero .dots{
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+
+.hero .dots label{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: 1px solid var(--main-color);
+    cursor: pointer;
+    transition: all 0.15s ease-in-out;
+    margin: 5px;
+}
+
+#img1:checked ~ .m1{
+    left: 0;
+    transition-delay: 5s;
+
+}
+#img2:checked ~ .m2{
+    left: -100%;
+    transition-delay: 5s;
+}
+#img3:checked ~ .m3{
+    left: -200%;
+    transition-delay: 5s;
+}
+#img4:checked ~ .m4{
+    left: -300%;
+    transition-delay: 5s;
+} */
 
 /* .hero .hero-slider .content{
     text-align: center;
@@ -338,6 +372,7 @@ hr {
     flex-direction: column;
     padding: 25px;
     justify-content: space-between;
+    min-height: 42vh;
 }
 
 .categories h1 {
@@ -1173,6 +1208,7 @@ hr {
 
 .item.hide{
     order: 2;
+
 }
 
 /* End Categories Page */
@@ -2143,11 +2179,11 @@ hr {
 
     /* Start Hero Section */
     .hero {
-        min-height: 90vh;
+        min-height: 70vh;
     }
 
     .hero .hero-items {
-        height: 90vh;
+        height: 70vh;
     }
 
     .hero .hero-header img {
