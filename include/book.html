@@ -5,93 +5,90 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>categories</title>
+    <title>Book</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+        integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../layout/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="layout/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../layout/css/style.css">
 </head>
 
 <body>
     <!-- Start Header Section -->
-    <section id="header">
-        <div class="hamburger">
-            <div class="bar"></div>
-        </div>
-        <nav class="header">
-            <ul class="menus">
-                <li><i class="fa fa-user"></i><a href="login.html">ادخل لحسابك او سجل الان</a></li>
-                <li><i class="fa fa-star"></i><a href="../index.html">الرئيسية</a></li>
-                <li><i class="fa fa-truck"></i> <a href="">من نحن</a></li>
-                <li><img src="https://img.icons8.com/ios-filled/50/000000/user-shield.png" /></i></i><a href="">اتصل
-                        بنا</a></li>
-                <li><i class="fa fa-info-circle"></i><a href="">المساعدة</a></li>
-                <li><img
-                        src="https://img.icons8.com/external-glyph-geotatah/64/000000/external-intellectual-new-product-development-npd-glyph-glyph-geotatah.png" /><a
-                        href="">سياسة الخصوصية</a></li>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light border py-0">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse w-100" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 d-flex justify-content-between">
+                <li class="nav-item model-log d-flex align-items-center border-start">
+                    <i class="fa fa-user"></i><a class="nav-link" href="#">ادخل لحسابك او سجل الان</a>
+                </li>
+                <li class="nav-item d-flex align-items-center border-start">
+                    <i class="fa fa-star"></i><a class="nav-link" href="../index.html">الرئيسية</a>
+                </li>
+                <li class="nav-item d-flex align-items-center border-start">
+                    <i class="fa fa-truck"></i> <a class="nav-link" href="inclode/categories.html">من نحن</a>
+                </li>
+                <li class="nav-item d-flex align-items-center border-start">
+                    <img src="https://img.icons8.com/ios-filled/50/000000/user-shield.png" /><a href="#" class="nav-link">اتصل بنا</a>
+                </li>
+                <li class="nav-item d-flex align-items-center border-start">
+                    <i class="fa fa-info-circle"></i><a href="#" class="nav-link">المساعدة</a>
+                </li>
+                <li class="nav-item d-flex align-items-center border-start">
+                    <img src="https://img.icons8.com/external-glyph-geotatah/64/000000/external-intellectual-new-product-development-npd-glyph-glyph-geotatah.png" /><a href="#" class="nav-link">سياسة الخصوصية</a>
+                </li>
+                <li class="border-start nav-item d-flex align-items-center justify-content-between col-md-1">
+                    <img src="layout/images/yemen.png" alt="" srcset="">
+                    <section class="border-bottom border-dark">
+                        <option value="">اليمن</option>
+                    </section>
+                    <p class="my-auto">YER</p>
+                </li>
+                <li class="nav-item d-flex align-items-center">
+                    <h2>English</h2>
+                    <img src="https://img.icons8.com/ios-filled/50/000000/language.png" />
+                </li>
             </ul>
-            <div class="header-c">
-                <img src="../layout/images/yemen.png" alt="" srcset="">
-                <section class="form-control">
-                    <option value="">اليمن</option>
-                </section>
-                <p>YER</p>
-            </div>
-            <div class="button">
-                <h2>English</h2>
-                <img src="https://img.icons8.com/ios-filled/50/000000/language.png" />
-            </div>
-        </nav>
-    </section>
+        </div>
+    </nav>
     <!-- End Header Section -->
 
     <!-- Staet Hreo Section -->
     <section id="hero">
-        <div class="hero container">
-            <div class="hero-items">
-                <div class="hero-header">
-                    <div class="card">
-                        <i class="fa fa-cart-arrow-down"></i>
-                    </div>
-                    <form action="" method="post">
-                        <div class="form-control">
-                            <input type="search">
-                            <button type="submit"><i class="fa fa-search"></i></button>
+        <div class="hero container-fluid">
+            <div class="hero-items d-flex flex-column justify-content-evenly">
+                <div class="hero-header d-flex flex-row-reverse justify-content-between align-items-center">
+                    <a class="card position-relative" href="../include/card.html">
+                        <div class="num position-absolute bg-danger rounded-circle d-flex justify-content-center align-items-center fw-bold text-white" id="num"></div>
+                        <i class="fa fa-cart-arrow-down fs-1"></i>
+                    </a>
+                    <div class="form col-sm-9 d-flex justify-content-center">
+                        <div class="form-control position-relative border-0">
+                            <input type="search" class="p-3 border-0">
+                            <button type="submit"><i class="fa fa-search fs-2 text-muted"></i></button>
                         </div>
-                    </form>
+                    </div>
                     <img src="../layout/images/icon1.png" alt="">
                 </div>
                 <div class="hero-slider">
-                    <span class="move1">
-                        << /span>
-                            <input type="radio" name="slider">
-                            <div class="slider">
-                                <img src="../layout/images/c1.jpg" alt="">
-                                <div class="content">
-                                    <h1>1نشرة العروض الترويجية</h1>
-                                    <a href="#">للاطلاع</a>
-                                    <p>يسري العرض من 29 نوفمبير حتى 8 ديسمبير 2022</p>
-                                </div>
-                            </div>
-                            <input type="radio" name="slider">
-                            <div class="slider">
-                                <img src="../layout/images/c2.jfif" alt="">
-                                <div class="content">
-                                    <h1>2نشرة العروض الترويجية</h1>
-                                    <a href="#">للاطلاع</a>
-                                    <p>يسري العرض من 29 نوفمبير حتى 8 ديسمبير 2022</p>
-                                </div>
-                            </div>
-                            <input type="radio" name="slider">
-                            <div class="slider">
-                                <img src="../layout/images/c3.jfif" alt="">
-                                <div class="content">
-                                    <h1>3نشرة العروض الترويجية</h1>
-                                    <a href="#">للاطلاع</a>
-                                    <p>يسري العرض من 29 نوفمبير حتى 8 ديسمبير 2022</p>
-                                </div>
-                            </div>
-                            <span class="move2">
-                                << /span>
+                    <input type="radio" name="slider">
+                    <div class="slider">
+                        <img src="../layout/images/na1.jpg" alt="">
+                    </div>
+                    <input type="radio" name="slider">
+                    <div class="slider">
+                        <img src="../layout/images/na2.jfif" alt="">
+                    </div>
+                    <input type="radio" name="slider">
+                    <div class="slider">
+                        <img src="../layout/images/na3.jfif" alt="">
+                    </div>
                 </div>
             </div>
         </div>
@@ -100,276 +97,290 @@
 
     <!-- Start Book Page -->
 
-    <section id="book">
-        <div class="book container">
-            <div class="all-items-book">
-                <div class="book-header">
-                    <div class="card-header">
-                        <span><a href="">الرئيسية</a>/</span>
-                        <span><a href="">الكتب العربية</a>/</span>
-                        <span><a href="">الكتب العربية</a>/</span>
-                        <span><a href="">كتب الكترونية</a></span>
+    <section id="book" class="mt-5">
+        <div class="book container-fluid">
+            <div class="all-items-book d-flex flex-column justify-content-between align-items-center">
+                <div class="book-header d-flex flex-column justify-content-between align-items-center">
+                    <div class="bg-transparent border-0 text-end col-sm-11">
+                        <span class="me-1 text-muted"><a href="" class="text-primary">الرئيسية</a>/</span>
+                        <span class="me-1 text-muted"><a href="" class="text-primary">الكتب العربية</a>/</span>
+                        <span class="me-1 text-muted"><a href="" class="text-primary">الكتب العربية</a>/</span>
+                        <span class="me-1 text-muted"><a href="" class="text-primary">كتب الكترونية</a></span>
                     </div>
-                    <div class="card-body">
-                        <div class="right">
-                            <img src="../layout/images/c1.jpg" alt="">
-                            <div class="buttom">
-                                <img src="../layout/images/c1.jpg" alt="" class="click-img">
-                            </div>
-                        </div>
-                        <div class="center">
-                            <div class="center-header">
-                                <h1>قصة (كتاب الكتروني)</h1>
-                                <p class="view">عرض المزيد</p>
-                                <h2>17.99<span>ر.س</span></h2>
-                                <p>شامل الضريبة</p>
-                            </div>
-                            <div class="content">
-                                <p>وحدة البيع Each</p>
-                                <p class="icons">
-                                    <span>(15 المراجعات)</span>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                </p>
-                                <p>رقم الصنف 11111111 رقم المنتج 4</p>
-                            </div>
-                            <div class="center-footer">
-                                <h2>الصيغ المتوفرة</h2>
-                                <div class="redio1">
-                                    <div class="r-right">
-                                        <div><span class="span"></span></div>
-                                        <p>كتاب الكتروني <span>؟</span></p>
-                                    </div>
-                                    <div class="l-left">
-                                        <h1>17.99<span>ر.س</span></h1>
-                                    </div>
+                    <div class="row row-cols-md-1 row-cols-xl-3">
+                        <div class="col">
+                            <div class="card d-flex flex-column align-items-center">
+                                <div class="card-body">
+                                    <img src="../layout/images/c1.jpg" class="img-fluid w-100" alt="">
                                 </div>
-                                <div class="redio2">
-                                    <div class="r-right">
-                                        <div></div>
-                                        <p>كتاب مطبوع</p>
-                                    </div>
-                                    <div class="l-left">
-                                        <h1>17.99<span>ر.س</span></h1>
+                                <div class="card-footer bg-transparent border-0">
+                                    <div class="buttom">
+                                        <img src="../layout/images/c1.jpg" alt="" class="click-img">
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="left">
-                            <div class="left-header">
-                                <div class="note">
-                                    <h1>ملاحظة: <span>سيتم اضافة هذا الكتاب سيتم اضافة هذا الكتاب</span></h1>
-                                    <a href="#">اقرأ المزيد</a>
+                        <div class="col">
+                            <div class="card border-1 w-100">
+                                <div class="card-header text-end mb-0 bg-transparent border-0">
+                                    <h1 class="mb-0 text-end">قصة (كتاب الكتروني)</h1>
+                                    <p class="text-primary mt-0 fw-bold">عرض المزيد</p>
+                                    <h2 class="text-danger mb-0 fs-1">17.99<span class="fs-5 text-danger">ر.س</span></h2>
+                                    <p class="text-muted mb-0 fw-bold">شامل الضريبة</p>
                                 </div>
-                                <div class="card">
-                                    <select name="" id="">
-                                        <option value="">1</option>
-                                    </select>
-                                    <h1><i class="fa fa-cart-arrow-down"></i> اضافةالى السلة</h1>
+                                <div class="card-body mt-0 d-flex flex-column align-items-end">
+                                    <p class="m-0 text-muted">وحدة البيع Each</p>
+                                    <p class="icons m-0">
+                                        <i class="fa fa-star text-warning"></i>
+                                        <i class="fa fa-star text-warning"></i>
+                                        <i class="fa fa-star text-warning"></i>
+                                        <i class="fa fa-star text-warning"></i>
+                                        <i class="fa fa-star text-warning"></i>
+                                        <span class="text-primary">(15 المراجعات)</span>
+                                    </p>
+                                    <p class="text-muted mb-0">رقم الصنف 11111111 <span class="me-1">رقم المنتج 4</span></p>
                                 </div>
-                                <div class="option">
-                                    <div class="box">
-                                        <i class="fa fa-star"></i>
-                                        <p>تسوق امن</p>
-                                        <i class="fa fa-star"></i>
+                                <div class="card-footer bg-transparent border-0">
+                                    <h2 class="text-end m-0 fs-4">الصيغ المتوفرة</h2>
+                                    <div class="card redio-1 p-0 border-0 d-flex justify-content-between flex-row">
+                                        <div class="card-header position-relative m-0 p-0 bg-transparent border-0 d-flex align-items-center">
+                                            <div class="mt-0"><span class="span "></span></div>
+                                            <p class="fs-4 text-muted m-1">كتاب الكتروني <span class="text-muted">؟</span></p>
+                                        </div>
+                                        <div class="card-body p-0">
+                                            <h1 class="fs-4 text-danger text-start me-4">17.99<span class="fs-6">ر.س</span></h1>
+                                        </div>
                                     </div>
-                                    <div class="box">
-                                        <i class="fa fa-star"></i>
-                                        <p>تسوق امن</p>
-                                        <i class="fa fa-star"></i>
-                                    </div>
-                                    <div class="box">
-                                        <i class="fa fa-star"></i>
-                                        <p>تسوق امن</p>
-                                        <i class="fa fa-star"></i>
+                                    <div class="card redio-2 p-0 border-0 d-flex justify-content-between flex-row">
+                                        <div class="card-header position-relative m-0 p-0 bg-transparent border-0 d-flex align-items-center">
+                                            <div class="mt-0"></div>
+                                            <p class="fs-4 text-muted m-1">كتاب مطبوع</p>
+                                        </div>
+                                        <div class="card-body p-0">
+                                            <h1 class="fs-4 text-danger text-start me-4">17.99<span class="fs-6">ر.س</span></h1>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="bottom">
-                                    <p><i class="fa fa-star"></i> مشاركة</p>
-                                    <p><i class="fa fa-star"></i> المفضلة</p>
-                                    <p><i class="fa fa-star"></i> مقارنة</p>
-                                </div>
-                            </div>
-                            <div class="left-footer">
-                                <p><i class="fa fa-star"></i> مشاركة</p>
-                                <p><i class="fa fa-star"></i> المفضلة</p>
-                                <p><i class="fa fa-star"></i> مقارنة</p>
                             </div>
                         </div>
-                    </div>
-                    <div class="book-details">
-                        <div class="book-prog">
-                            <p>كتاب يتحدث عن قصص وحكايات قديمة جدا كتاب ممتع ومشوق</p>
-                        </div>
-                        <div class="book-info">
-                            <h1>المواصفات</h1>
-                            <div class="menu-list">
-                                <div class="info">
-                                    <p>رقم الصنف</p>
-                                    <span>JBB410156</span>
+                        <div class="col">
+                            <div class="card m-0 d-flex flex-column align-items-center">
+                                <div class="card-header text-end m-2">
+                                    <h1 class="fs-4">ملاحظة: <span class="fs-5 text-muted">سيتم اضافة هذا الكتاب سيتم اضافة هذا الكتاب</span></h1>
+                                    <a href="#" class="text-primary">اقرأ المزيد</a>
                                 </div>
-                            </div>
-                            <div class="menu-list">
-                                <div class="info">
-                                    <p>رقم المنتج</p>
-                                    <span>4</span>
+                                <div class="card-body w-100">
+                                    <div class="card-title text-senter text-dark d-flex justify-content-evenly align-items-center">
+                                        <select name="" id="" class=" p-2 m-auto bg-light border-0">
+                                            <option class="" value="">1</option>
+                                        </select>
+                                        <h1 class="fs-5 rounded text-white bg-danger py-2 px-5 mt-0"><i class="fa fa-cart-arrow-down"></i> اضافةالى السلة</h1>
+                                    </div>
+                                    <ul class="d-flex flex-wrap justify-content-between">
+                                        <li class="d-flex align-items-center me-4 text-muted">
+                                            <i class="fa fa-star"></i>
+                                            <p>تسوق امن</p>
+                                            <i class="fa fa-star"></i>
+                                        </li>
+                                        <li class="d-flex align-items-center me-4 text-muted">
+                                            <i class="fa fa-star"></i>
+                                            <p>تسوق امن</p>
+                                            <i class="fa fa-star"></i>
+                                        </li>
+                                        <li class="d-flex align-items-center me-4 text-muted">
+                                            <i class="fa fa-star"></i>
+                                            <p>تسوق امن</p>
+                                            <i class="fa fa-star"></i>
+                                        </li>
+                                    </ul>
                                 </div>
-                            </div>
-                            <div class="menu-list">
-                                <div class="info">
-                                    <p>المؤلف</p>
-                                    <span>علي جابر الفيفي</span>
+                                <div class="card-footer w-100 box bg-transparent border-top">
+                                    <div class="col-sm-12 d-flex justify-content-between">
+                                        <p class="p-2"><i class="fa fa-star"></i> مشاركة</p>
+                                        <p class="p-2"><i class="fa fa-star"></i> المفضلة</p>
+                                        <p class="p-2"><i class="fa fa-star"></i> مقارنة</p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="menu-list">
-                                <div class="info">
-                                    <p>الناشر</p>
-                                    <span>دار الحضارة للنشر والتوزيع</span>
+                                <div class="card-footer mt-1 box w-100 bg-transparent border-top-0">
+                                    <div class="col-sm-12 d-flex justify-content-between">
+                                        <p class="p-2"><i class="fa fa-star"></i> مشاركة</p>
+                                        <p class="p-2"><i class="fa fa-star"></i> المفضلة</p>
+                                        <p class="p-2"><i class="fa fa-star"></i> مقارنة</p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="menu-list">
-                                <div class="info">
-                                    <p>تاريخ النشر</p>
-                                    <span>2016</span>
-                                </div>
-                            </div>
-                            <div class="menu-list">
-                                <div class="info">
-                                    <p>صيغة الكتاب</p>
-                                    <span>Ebook</span>
-                                </div>
-                            </div>
-                            <div class="menu-list">
-                                <div class="info">
-                                    <p>عدد الصفحات</p>
-                                    <span>182</span>
-                                </div>
-                            </div>
-                            <div class="menu-list">
-                                <div class="info">
-                                    <p>وزن الشحن (كجم) </p>
-                                    <span>0.0100</span>
-                                </div>
-                            </div>
-                            <div class="menu-list">
-                                <div class="info">
-                                    <p>صيغة الملف</p>
-                                    <span>ePub</span>
-                                </div>
-                            </div>
-                            <div class="menu-list">
-                                <div class="info">
-                                    <p>اللغة</p>
-                                    <span>عربي</span>
-                                </div>
-                            </div>
-                            <div class="view-less">
-                                <p>عرض اقل</p>
                             </div>
                         </div>
                     </div>
-                    <div class="rating">
-                        <div class="rating-header">
+                    <div class="book-details w-100 my-3 mx-auto p-1 border-bottom">
+                        <div class="book-prog p-3 border-bottom border-top border-muted text-muted bg-light">
+                            <p class="text-end">كتاب يتحدث عن قصص وحكايات قديمة جدا كتاب ممتع ومشوق</p>
+                        </div>
+                        <div class="book-info p-3 w-100">
+                            <h1 class="fs-4 text-end mb-2">المواصفات</h1>
+                            <div class="menu-list p-1 border-bottom border-dark mb-2">
+                                <div class="info d-flex justify-content-between align-items-center col-sm-11">
+                                    <p class="text-muted">رقم الصنف</p>
+                                    <span class="fw-bold text-end col-sm-6">JBB410156</span>
+                                </div>
+                            </div>
+                            <div class="menu-list p-1 border-bottom border-dark mb-2">
+                                <div class="info d-flex justify-content-between align-items-center col-sm-11">
+                                    <p class="text-muted">رقم المنتج</p>
+                                    <span class="fw-bold text-end col-sm-6">4</span>
+                                </div>
+                            </div>
+                            <div class="menu-list p-1 border-bottom border-dark mb-2">
+                                <div class="info d-flex justify-content-between align-items-center col-sm-11">
+                                    <p class="text-muted">المؤلف</p>
+                                    <span class="fw-bold text-end col-sm-6">علي جابر الفيفي</span>
+                                </div>
+                            </div>
+                            <div class="menu-list p-1 border-bottom border-dark mb-2">
+                                <div class="info d-flex justify-content-between align-items-center col-sm-11">
+                                    <p class="text-muted">الناشر</p>
+                                    <span class="fw-bold text-end col-sm-6">دار الحضارة للنشر والتوزيع</span>
+                                </div>
+                            </div>
+                            <div class="menu-list p-1 border-bottom border-dark mb-2">
+                                <div class="info d-flex justify-content-between align-items-center col-sm-11">
+                                    <p class="text-muted">تاريخ النشر</p>
+                                    <span class="fw-bold text-end col-sm-6">2016</span>
+                                </div>
+                            </div>
+                            <div class="menu-list p-1 border-bottom border-dark mb-1">
+                                <div class="info d-flex justify-content-between align-items-center col-sm-11">
+                                    <p class="text-muted">صيغة الكتاب</p>
+                                    <span class="fw-bold text-end col-sm-6">Ebook</span>
+                                </div>
+                            </div>
+                            <div class="menu-list p-1 border-bottom border-dark mb-2">
+                                <div class="info d-flex justify-content-between align-items-center col-sm-11">
+                                    <p class="text-muted">عدد الصفحات</p>
+                                    <span class="fw-bold text-end col-sm-6">182</span>
+                                </div>
+                            </div>
+                            <div class="menu-list p-1 border-bottom border-dark mb-2">
+                                <div class="info d-flex justify-content-between align-items-center col-sm-11">
+                                    <p class="text-muted">وزن الشحن (كجم) </p>
+                                    <span class="fw-bold text-end col-sm-6">0.0100</span>
+                                </div>
+                            </div>
+                            <div class="menu-list p-1 border-bottom border-dark mb-2">
+                                <div class="info d-flex justify-content-between align-items-center col-sm-11">
+                                    <p class="text-muted">صيغة الملف</p>
+                                    <span class="fw-bold text-end col-sm-6">ePub</span>
+                                </div>
+                            </div>
+                            <div class="menu-list p-1 border-bottom border-dark mb-2">
+                                <div class="info d-flex justify-content-between align-items-center col-sm-11">
+                                    <p class="text-muted">اللغة</p>
+                                    <span class="fw-bold text-end col-sm-6">عربي</span>
+                                </div>
+                            </div>
+                            <div class="view-less w-100 position-relative text-start rounded-bottom border-bottom border-dark ">
+                                <p class="ms-3 text-primary fw-bold">عرض اقل</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rating p-3 border-bottom border-dark col-sm-11">
+                        <div class="rating-header d-flex align-items-center p-1 col-sm-12">
                             <h1>مراجعات العملاء </h1>
-                            <a href="#"><i class="fa fa-plus"></i> اكتب مراجعتك</a>
+                            <a class="p-1 fs-4 rounded bg-primary text-white me-1" href="#"><i class="fa fa-plus"></i> اكتب مراجعتك</a>
                         </div>
-                        <div class="rating-body">
+                        <div class="rating-body d-flex flex-column p-1 justify-content-between text-end">
                             <div class="all-rating">
-                                <div class="commint">
-                                    <h1>Good</h1>
-                                    <p>
+                                <div class="commint p-2 w-100 bg-light">
+                                    <h1 class="fs-4">Good</h1>
+                                    <p class=" d-flex w-100 justify-content-between m-0">
                                         <span>من قبل نايف سمير</span>
                                         <span>2022/20/1</span>
                                     </p>
                                 </div>
-                                <p>Good</p>
-                                <div class="commint">
-                                    <h1>رهيب</h1>
-                                    <p>
+                                <p class="text-muted mt-1 mx-1 mb-3">Good</p>
+                                <div class="commint p-2 w-100 bg-light">
+                                    <h1 class="fs-4">رهيب</h1>
+                                    <p class="d-flex w-100 justify-content-between m-0">
                                         <span>من قبل سلمان الوجية</span>
                                         <span>2022/20/1</span>
                                     </p>
                                 </div>
-                                <p>جميل جدا</p>
-                                <div class="commint">
-                                    <h1>كتاب رائع</h1>
-                                    <p>
+                                <p class="text-muted mt-1 mx-1 mb-3">جميل جدا</p>
+                                <div class="commint p-2 w-100 bg-light">
+                                    <h1 class="fs-4">كتاب رائع</h1>
+                                    <p class="d-flex w-100 justify-content-between m-0">
                                         <span>من قبل خليفة القياضي</span>
                                         <span>2022/20/1</span>
                                     </p>
                                 </div>
-                                <p>جميل جدا ومفيد</p>
+                                <p class="text-muted mt-1 mx-1 mb-3">جميل جدا ومفيد</p>
                             </div>
-                            <div class="view-rating">
-                                <p>اظهار جميع المراجعات (15) </p>
+                            <div class="view-rating w-100 rounded text-start position-relative">
+                                <p class="ms-3 text-primary fw-bold">اظهار جميع المراجعات (15) </p>
                             </div>
                         </div>
                     </div>
-                    <div class="content-home">
-                        <div class="content-header">
-                            <h1>منتجات مشابهة</h1>
+                    <div class="content-home d-flex flex-column justify-content-center p-1 m-0 position-relative col-sm-12">
+                        <div class="content-header m-0 col-sm-11 me-4">
+                            <h1 class="text-end">منتجات مشابهة</h1>
                         </div>
-                        <div class="all-items">
-                            <div class="item">
-                                <div class="top">
-                                    <img src="../layout/images/c1.jpg" alt="">
-                                    <a href="book.html"> كتاب الكتروني</a>
+                        <div class="row d-flex flex-wrap col-sm-12">
+                            <div class="card col-sm-2 d-flex flex-column align-items-center">
+                                <div class="card-header bg-transparent border-0 pt-0 d-flex flex-column align-items-center">
+                                    <img src="../layout/images/c1.jpg " class="img-fluid" alt="">
+                                    <a href="book.html" class="fs-4 w-100 text-center"> كتاب الكتروني</a>
                                 </div>
-                                <div class="price">
-                                    <h1>17.99<span>ر.س</span></h1>
+                                <div class="card-body">
+                                    <h1 class="fs-4 text-danger">17.99<span class="fs-5">ر.س</span></h1>
                                     <p>شامل الضريبة</p>
                                 </div>
                             </div>
-                            <div class="item">
-                                <div class="top">
-                                    <img src="../layout/images/c1.jpg" alt="">
-                                    <a href="book.html"> كتاب الكتروني</a>
+                            <div class="card col-sm-2 d-flex flex-column align-items-center">
+                                <div class="card-header bg-transparent border-0 pt-0 d-flex flex-column align-items-center">
+                                    <img src="../layout/images/c1.jpg " class="img-fluid" alt="">
+                                    <a href="book.html" class="fs-4 w-100 text-center"> كتاب الكتروني</a>
                                 </div>
-                                <div class="price">
-                                    <h1>17.99<span>ر.س</span></h1>
+                                <div class="card-body">
+                                    <h1 class="fs-4 text-danger">17.99<span class="fs-5">ر.س</span></h1>
                                     <p>شامل الضريبة</p>
                                 </div>
                             </div>
-                            <div class="item">
-                                <div class="top">
-                                    <img src="../layout/images/c1.jpg" alt="">
-                                    <a href="book.html"> كتاب الكتروني</a>
+                            <div class="card col-sm-2 d-flex flex-column align-items-center">
+                                <div class="card-header bg-transparent border-0 pt-0 d-flex flex-column align-items-center">
+                                    <img src="../layout/images/c1.jpg " class="img-fluid" alt="">
+                                    <a href="book.html" class="fs-4 w-100 text-center"> كتاب الكتروني</a>
                                 </div>
-                                <div class="price">
-                                    <h1>17.99<span>ر.س</span></h1>
+                                <div class="card-body">
+                                    <h1 class="fs-4 text-danger">17.99<span class="fs-5">ر.س</span></h1>
                                     <p>شامل الضريبة</p>
                                 </div>
                             </div>
-                            <div class="item">
-                                <div class="top">
-                                    <img src="../layout/images/c1.jpg" alt="">
-                                    <a href="book.html"> كتاب الكتروني</a>
+                            <div class="card col-sm-2 d-flex flex-column align-items-center">
+                                <div class="card-header bg-transparent border-0 pt-0 d-flex flex-column align-items-center">
+                                    <img src="../layout/images/c1.jpg " class="img-fluid" alt="">
+                                    <a href="book.html" class="fs-4 w-100 text-center"> كتاب الكتروني</a>
                                 </div>
-                                <div class="price">
-                                    <h1>17.99<span>ر.س</span></h1>
+                                <div class="card-body">
+                                    <h1 class="fs-4 text-danger">17.99<span class="fs-5">ر.س</span></h1>
                                     <p>شامل الضريبة</p>
                                 </div>
                             </div>
-                            <div class="item">
-                                <div class="top">
-                                    <img src="../layout/images/c1.jpg" alt="">
-                                    <a href="book.html"> كتاب الكتروني</a>
+                            <div class="card col-sm-2 d-flex flex-column align-items-center">
+                                <div class="card-header bg-transparent border-0 pt-0 d-flex flex-column align-items-center">
+                                    <img src="../layout/images/c1.jpg " class="img-fluid" alt="">
+                                    <a href="book.html" class="fs-4 w-100 text-center"> كتاب الكتروني</a>
                                 </div>
-                                <div class="price">
-                                    <h1>17.99<span>ر.س</span></h1>
+                                <div class="card-body">
+                                    <h1 class="fs-4 text-danger">17.99<span class="fs-5">ر.س</span></h1>
                                     <p>شامل الضريبة</p>
                                 </div>
                             </div>
-                            <div class="item">
-                                <div class="top">
-                                    <img src="../layout/images/c1.jpg" alt="">
-                                    <a href="book.html"> كتاب الكتروني</a>
+                            <div class="card col-sm-2 d-flex flex-column align-items-center">
+                                <div class="card-header bg-transparent border-0 pt-0 d-flex flex-column align-items-center">
+                                    <img src="../layout/images/c1.jpg " class="img-fluid" alt="">
+                                    <a href="book.html" class="fs-4 w-100 text-center"> كتاب الكتروني</a>
                                 </div>
-                                <div class="price">
-                                    <h1>17.99<span>ر.س</span></h1>
+                                <div class="card-body">
+                                    <h1 class="fs-4 text-danger">17.99<span class="fs-5">ر.س</span></h1>
                                     <p>شامل الضريبة</p>
                                 </div>
                             </div>
